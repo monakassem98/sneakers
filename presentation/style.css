@@ -1,0 +1,62 @@
+:root {
+    --orange: hsl(26, 100%, 55%);
+    --pale-orange: hsl(25, 100%, 94%);
+    --dark-gray: hsl(219, 9%, 45%);
+    --light-gray: hsl(0deg 0% 87.55%);
+}
+
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 30px auto;
+    border-bottom: solid 1px var(--light-gray);
+    padding: 0 0 20px 0;
+}
+
+header .left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+
+header .left nav a {
+    margin: 0 0 0 10px;
+    color: var(--dark-gray);
+    text-decoration: none;
+    padding: 0 0 35px 0;
+}
+
+header .left nav a:hover {
+    border-bottom: 3px solid var(--orange);
+    color: black;
+}
+
+header .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+}
+
+header .right img {
+    cursor: pointer;
+}
+
+header .right .avatar img {
+    width: 45px;
+    border-radius: 50%;
+    box-sizing: border-box;
+
+}
+
+header .right .avatar img:hover {
+    border: 2px solid var(--orange);
+}
